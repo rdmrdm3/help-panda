@@ -10,7 +10,9 @@ int         main()
 
     strcpy(example_ptr_to_char_2, "hello world!\n"); // this will work because pointer is initialized in array with 16 memory block reserved
     //strcpy(example_ptr_to_char_1, "this will cause memory error because this pointer is pointing to a memory space where the next few memory block is not reserved for usage\n")''
-
+    //ft_strcapitalize(example_ptr_to_char_1); //this will fail
+    //ft_any_string_manipulation_function(example_ptr_to_char_1); //all will fail
+    
     printf("%s", example_ptr_to_char_2);
     printf("############################\n");
     printf("example_ptr_to_char_2 addresss : %p, value = %c\n", example_ptr_to_char_2, example_ptr_to_char_2[0]);

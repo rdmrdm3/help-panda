@@ -8,7 +8,7 @@ int         main()
     char        example_ptr_to_char_2[16];
     char        example_ptr_to_char_3[32] = "this will work too\n"; //two ways to assign value, <-- this way will not pass norminette
 
-    strcpy(example_ptr_to_char_2, "hello world!\n"); // this will work because pointer
+    strcpy(example_ptr_to_char_2, "hello world!\n"); // this will work because pointer is initialized in array with 16 memory block reserved
     //strcpy(example_ptr_to_char_1, "this will cause memory error because this pointer is pointing to a memory space where the next few memory block is not reserved for usage\n")''
 
     printf("%s", example_ptr_to_char_2);
